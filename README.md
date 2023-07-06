@@ -14,7 +14,7 @@ Wordle take-home challenge for Limio FAC apprenticeship application:
 Author: R. George Klemperer
 
 Wordle user stories:
-- As a player, I want to start a new game of wordle where I am presented with a random 5 letter hidden word that I have to guess for fun.
+- As a player, I want to start a new game of Wordle where I am presented with a random 5 letter hidden word that I have to guess for fun.
 - The hidden word should change every day to a new random 5 letter word. Therefore, the user should only be able to play once per day.
 - As a player, I want to receive feedback on my guesses to help me make further attempts. Correctly guessed letters should be highlighted yellow upon submission and correctly guessed letters in the correct position should be highlighted green.
 - As a player, I want to see letters I have already guessed that are not present in the hidden word to help me keep track of what I have guessed.
