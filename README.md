@@ -22,6 +22,6 @@ Wordle user stories:
 - As a player, I want to be told when I have correctly guessed the hidden word.
 - As a player, after 6 attempts I want to be told the hidden word after being unable to solve it so I can learn from the solution and improve.
 - As a busy player, if I leave the application halfway through the game I want to be able to return to where I left off when revisiting later in the day. This would also stop cheating via resetting guess count.
-- As a player, I want to see my previous game statistics, such as the number of games won, lost, and the average number of attempts per game.
+- As a player, I want to be able too make an account so I can track my game statistics, such as the number of games won, lost, and the average number of attempts per game.
 - As a player, I want the game to be accessible on various platforms, such as desktop, mobile, or web, to play at my convenience.
 - As an impaired user, I want the game to have accessibility options such as a dark mode or high contrast colour setting.
