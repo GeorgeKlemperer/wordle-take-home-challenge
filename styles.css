@@ -29,6 +29,10 @@ body {
   justify-content: space-between;
 }
 
+.date {
+  text-align: left;
+}
+
 #randomWord {
   font-size: 6rem;
 }

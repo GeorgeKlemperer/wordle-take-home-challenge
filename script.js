@@ -1,8 +1,14 @@
+//Display todays date
+const date = new Date();
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+document.getElementById("date").innerHTML = days[date.getDay()]+" "+date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear();
+
 const letter1 = document.getElementById('randomWordLetter1');
 const letter2 = document.getElementById('randomWordLetter2');
 const letter3 = document.getElementById('randomWordLetter3');
 const letter4 = document.getElementById('randomWordLetter4');
 const letter5 = document.getElementById('randomWordLetter5');
+
 
 // Function to get a single random 5-letter word
 async function getRandomWord() {
