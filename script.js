@@ -33,3 +33,16 @@ async function getRandomWord() {
 
 // Call the function to get a random word
 getRandomWord();
+
+
+// Add event listener to each keyboard key
+const keys = document.querySelectorAll('.key');
+keys.forEach((key) => {
+  key.addEventListener('click', handleKeyClick);
+});
+
+// Event handler for keyboard key click
+function handleKeyClick(event) {
+  const clickedKey = event.target;
+  console.log(`Clicked key: ${clickedKey.textContent}`);
+}
