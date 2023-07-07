@@ -3,6 +3,9 @@ const date = new Date();
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 document.getElementById("date").innerHTML = days[date.getDay()]+" "+date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear();
 
+let formattedDate = date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()
+console.log(formattedDate);
+
 const letter1 = document.getElementById('randomWordLetter1');
 const letter2 = document.getElementById('randomWordLetter2');
 const letter3 = document.getElementById('randomWordLetter3');
