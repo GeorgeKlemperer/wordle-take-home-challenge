@@ -1,3 +1,9 @@
+const letter1 = document.getElementById('randomWordLetter1');
+const letter2 = document.getElementById('randomWordLetter2');
+const letter3 = document.getElementById('randomWordLetter3');
+const letter4 = document.getElementById('randomWordLetter4');
+const letter5 = document.getElementById('randomWordLetter5');
+
 // Function to get a single random 5-letter word
 async function getRandomWord() {
   // API endpoint URL
@@ -10,8 +16,13 @@ async function getRandomWord() {
     
     // Check if the response is successful
     if (response.ok) {
-      const randomWord = data[0];
-      console.log(randomWord);
+      const randomWord = data[0].toUpperCase();
+      //Display the random word
+      letter1.innerText = randomWord.charAt(0);
+      letter2.innerText = randomWord.charAt(1);
+      letter3.innerText = randomWord.charAt(2);
+      letter4.innerText = randomWord.charAt(3);
+      letter5.innerText = randomWord.charAt(4);
     } else {
       throw new Error('Failed to fetch random word');
     }
