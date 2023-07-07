@@ -1,27 +1,19 @@
-async function generateRandomWord() {
-    const apiKey = 'YOUR_API_KEY';
-    const url = 'https://random-word-api.herokuapp.com/word?number=1&length=5';
-    
-    const response = await fetch(url, {
-      headers: {
-        'X-RapidAPI-Host': 'random-words5.p.rapidapi.com',
-        'X-RapidAPI-Key': '749341a367msh5d280212f416564p140e11jsn95fff133322c'
-      }
-    });
+async function getRandomWord() {
+  const apiUrl = 'https://random-word-api.vercel.app/api?words=1&length=5';
+
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
     
     if (response.ok) {
-      const data = await response.json();
-      const word = data[0];
-      return word;
+      const randomWord = data[0];
+      console.log(randomWord);
     } else {
-      // Handle API error
-      return null;
+      throw new Error('Failed to fetch random word');
     }
+  } catch (error) {
+    console.error(error);
   }
-  
-  async function run() {
-    const randomWord = await generateRandomWord();
-    console.log(randomWord);
-  }
-  
-  run();
+}
+
+getRandomWord();
