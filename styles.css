@@ -1,75 +1,77 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-  }
+  box-sizing: border-box;
+}
 
-  .stack > * + * {
-    margin-top: 3rem;
-  }
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
 
-  .center {
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.stack > * + * {
+  margin-top: 3rem;
+}
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.center {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .justify-space-between {
-    justify-content: space-between;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-  #randomWord {
-    font-size: 6rem;
-  }
+.justify-space-between {
+  justify-content: space-between;
+}
 
-  /* Keyboard */
-  .keyboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .keyboardRow {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .key {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    min-width: 40px;
-    height: 40px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 20px;
-    cursor: pointer;
-  }
+#randomWord {
+  font-size: 6rem;
+}
 
-  #backspace {
-    background-image: url(images/backspace.png); /* Replace 'backspace.png' with the path to your backspace icon */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
-    width: 80px;
-  }
-  
-  .key:hover {
-    /* background-color: darkgray; */
-    -webkit-filter: opacity(50%);
-  }
-  
+/* Keyboard */
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboardRow {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  min-width: 3rem;
+  height: 3rem;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#enterButton {
+  width: 6rem;
+}
+
+#backspaceButton {
+  background-image: url(images/backspace.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  width: 7rem;
+}
+
+.key:hover {
+  -webkit-filter: brightness(60%);
+}
