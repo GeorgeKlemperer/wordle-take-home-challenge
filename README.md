@@ -11,6 +11,8 @@ Wordle take-home challenge for Limio FAC apprenticeship application:
 >- Decide which user story you are going to focus on for the take-home challenge.
 >- Attempt to complete the selected user story. Do not attempt to complete the whole game.
 
+git clone https://github.com/GeorgeKlemperer/wordle-take-home-challenge.git
+
 Author: R. George Klemperer
 
 Wordle user stories:
